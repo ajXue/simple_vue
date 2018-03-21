@@ -1,25 +1,23 @@
 <template>
   <el-row class="tac">
     <el-col :span="4">
-      <el-menu defaultActive="2" class="el-menu-vertical-demo">
-        <el-menu-item index="manage"><i class="el-icon-menu"></i>首页</el-menu-item>
-        <el-submenu index="1">
+      <el-menu defaultActive="2" class="el-menu-vertical-demo" router>
+        <el-menu-item index="pageshow"><i class="el-icon-menu"></i>首页</el-menu-item>
+        <el-submenu index="2">
+          <template slot="title">
+            <i class="el-icon-phone"></i>
+            <span slot="title">管理详情</span>
+          </template>
+          <el-menu-item index="pageshow">欢迎</el-menu-item>
+        </el-submenu>
+        <el-submenu index="wuliu">
           <template slot="title">
             <i class="el-icon-search"></i>
             <span>物流管理</span>
           </template>
-          <el-menu-item index="1-1">物流查询</el-menu-item>
-          <el-menu-item index="1-2">2</el-menu-item>
-          <el-menu-item index="1-3">3</el-menu-item>
-        </el-submenu>
-        <el-submenu index="2">
-          <template slot="title">
-            <i class="el-icon-phone"></i>
-            <span slot="title">导航二</span>
-          </template>
-          <el-menu-item index="2-1">1</el-menu-item>
-          <el-menu-item index="2-2">1</el-menu-item>
-          <el-menu-item index="2-3">1</el-menu-item>
+          <el-menu-item index="wuliu1">物流查询</el-menu-item>
+          <el-menu-item index="wuliu2">2</el-menu-item>
+          <el-menu-item index="wuliu3">3</el-menu-item>
         </el-submenu>
         <el-submenu index="3">
           <template slot="title">

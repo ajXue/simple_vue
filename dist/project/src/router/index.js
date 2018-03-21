@@ -24,6 +24,10 @@ var _wuliu = require('@/pages/wuliu/wuliu');
 
 var _wuliu2 = _interopRequireDefault(_wuliu);
 
+var _pageshow = require('@/pages/pageshow/pageshow');
+
+var _pageshow2 = _interopRequireDefault(_pageshow);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _vue2.default.use(_vueRouter2.default);
@@ -34,6 +38,12 @@ exports.default = new _vueRouter2.default({
     component: _content2.default,
     children: [{
       path: '/',
+      component: _pageshow2.default
+    }, {
+      path: '/pageshow',
+      component: _pageshow2.default
+    }, {
+      path: '/wuliu1',
       component: _wuliu2.default
     }]
   }]
