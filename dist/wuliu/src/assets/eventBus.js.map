@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../wuliu/src/assets/eventBus.js"],"names":[],"mappings":";;;;;;AAAA;;;;;;kBAGe,mB","file":"eventBus.js","sourcesContent":["import Vue from 'Vue'\n\n\nexport default new Vue;\n\n"]}
