@@ -1,8 +1,8 @@
 <template>
-  <el-row class="tac">
-    <el-col :span="4">
-      <el-menu defaultActive="2" class="el-menu-vertical-demo" router>
-        <el-menu-item index="pageshow"><i class="el-icon-menu"></i>首页</el-menu-item>
+  <el-row class="tac fillcontain">
+    <el-col :span="4" style="min-height: 100%; background-color: #324057;">
+      <el-menu defaultActive="3" style="min-height: 100%;" background-color="#324057" active-text-color="#ffd04b" text-color="#fff"  router>
+        <el-menu-item index="home"><i class="el-icon-menu"></i>首页</el-menu-item>
         <el-submenu index="2">
           <template slot="title">
             <i class="el-icon-phone"></i>
@@ -45,12 +45,12 @@
   </el-row>
 </template>
 
-<!--<script>-->
-<!--import ElMenu from "../../node_modules/element-ui/packages/menu/src/menu.vue";-->
+<script>
+import ElMenu from "../../node_modules/element-ui/packages/menu/src/menu.vue";
 
-<!--export default {-->
-  <!--components: {ElMenu}-->
-<!--}-->
-<!--</script>-->
+export default {
+  components: {ElMenu}
+}
+</script>
 
 
