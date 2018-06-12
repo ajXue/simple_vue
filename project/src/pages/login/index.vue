@@ -1,24 +1,38 @@
 <template>
   <div class="loginContainer">
-    <el-row>
-      <el-col :span="12" :push="6">
-        <el-form ref="loginForm" :model="loginForm" >
-          <el-form-item label="姓名">
-            <el-input v-model="loginForm.username" placeholder="请输入姓名"></el-input>
-          </el-form-item>
-          <el-form-item label="密码">
-            <el-input v-model="loginForm.password" placeholder="请输入密码"></el-input>
-          </el-form-item>
-          <el-form-item>
-            <el-button type="primary" @click="submit">登录</el-button>
-          </el-form-item>
-        </el-form>
-      </el-col>
-    </el-row>
+    <div id="particles-js"></div>
+    <div id="loginWrap">
+      <el-tabs tab-position="center">
+        <el-tab-pane label="账号登录" name="first">
+          <div id="loginForm">
+            <el-form ref="loginForm" :model="loginForm" >
+                <el-input v-model="loginForm.username" placeholder="请输入姓名"></el-input>
+                <el-input v-model="loginForm.password" placeholder="请输入密码"></el-input>
+              <el-form-item>
+                <el-button type="primary" @click="submit">登录</el-button>
+              </el-form-item>
+            </el-form>
+          </div>
+        </el-tab-pane>
+        <el-tab-pane label="验证码登录" name="second">
+          11
+        </el-tab-pane>
+      </el-tabs>
+      
+      
+    </div>
   </div>
 </template>
 
+<style>
+/* .loginContainer{position: relative;width: 100%;height: 100%;} */
+/* .loginContainer #particles-js{position: absolute;top: 0;left: 0;width: 100%;height: 100%;} */
+.loginContainer #loginWrap{position: absolute;top: 100px;left: 50%;width: 500px;margin-left:-250px;}
+</style>
+
+
 <script>
+  import "../../assets/pluds/particles.js"
   import axios from "axios"
   import qs from 'qs';
 

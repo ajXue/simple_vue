@@ -15,6 +15,10 @@ export default new Router({
       component: login
     },
     {
+      path: '/',
+      component: login
+    },
+    {
       path: '/content',
       component: content,
       children: [{
