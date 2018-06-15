@@ -27,17 +27,12 @@ app.all('/query',function (req, res) {
   })
 });
 app.all('/login', function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
-  res.header("Access-Control-Allow-Headers", "X-Requested-With");
-  res.header('Access-Control-Allow-Headers', 'Content-Type');
-  console.log(req.body);
-  // console.log(req.query)
-  // console.log(req.params)
-  if (req.query.username ) {
-    res.send('code：1')
+  console.log(req.body.username)
+  console.log(req.body.password)
+  if (req.body.username == "xuerenwei" && req.body.password == "123456" ) {
+    res.json({"code": "ok"})
   } else {
-    res.send('code：0')
+    res.json({"code": "error"})
   }
 });
 
