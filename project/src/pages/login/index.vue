@@ -15,7 +15,7 @@
           </div>
         </el-tab-pane>
         <el-tab-pane label="验证码登录" name="second">
-          验证码登录（待开发。。。）
+          验证码登录（待开发。。。）1
         </el-tab-pane>
       </el-tabs>
     </div>
